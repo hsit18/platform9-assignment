@@ -1,0 +1,43 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: start;
+  grid-gap: 12px;
+  border: 1px solid #00000038;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.country form {
+  float: left;
+}
+
+.country .country-input {
+  width: 100px;
+}
+
+.horiz-bar {
+  display: inline-block;
+  background-color: blue;
+  border-style: solid;
+  border-color: black;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .row {
+    grid-template-columns: 200px 200px 200px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .row {
+    grid-template-columns: 250px 250px 250px;
+  }
+}
